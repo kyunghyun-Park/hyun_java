@@ -29,7 +29,7 @@ public class Que2 {
                 min = arr[i];
         }
 
-        System.out.println("가장 큰 수: "+max +"가장 작은 수: "+min);
+        System.out.println("가장 큰 수: "+max +" 가장 작은 수: "+min);
 
 
 
