@@ -44,7 +44,6 @@ public class Que2 {
                 break;
             case 3:
                 System.out.println("돼지띠");
-
         }
     }
 }
