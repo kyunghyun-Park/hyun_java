@@ -12,8 +12,6 @@ class Circle {
         setRad(r);
     }
 
-    ;
-
     public double getArea() {
         if (rad > 0)
             return (rad * rad) * PI;
