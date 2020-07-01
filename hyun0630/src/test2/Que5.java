@@ -2,7 +2,7 @@ package test2;
 
 import java.util.Scanner;
 
-public class Que5 {
+ class Que5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("입력: ");
@@ -20,9 +20,5 @@ public class Que5 {
             if(cnt[i]!=0)
                 System.out.println((char)(97+i)+"는 "+cnt[i]+"글자입니다.");
         }
-
-
-
-
     }
 }
