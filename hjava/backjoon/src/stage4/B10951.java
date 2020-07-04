@@ -1,18 +1,17 @@
+package stage4;
+
 import java.util.Scanner;
 
-public class B10952 {
+public class B10951 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
 
-        while(true){
+        while(sc.hasNextInt()){
             int a=sc.nextInt();
             int b=sc.nextInt();
 
-            if(a!=0 && b!=0){
-                System.out.println(a+b);
-            }else
-                break;
+            System.out.println(a+b);
         }
     }
 }

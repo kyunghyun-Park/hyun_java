@@ -1,4 +1,4 @@
-package backjoon;
+package stage2;
 
 import java.util.Scanner;
 

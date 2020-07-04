@@ -1,3 +1,5 @@
+package stage1;
+
 import java.util.Scanner;
 
 public class B2588 {
