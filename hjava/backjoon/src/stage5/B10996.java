@@ -7,7 +7,7 @@ public class B10996 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        for (int i = 0; i <= 2 * n; i++) {
+        for (int i = 1; i <= 2 * n; i++) {
                 //짝수 행
             if (i % 2 == 0) {
                 for (int j = 1; j <= n; j++) {
