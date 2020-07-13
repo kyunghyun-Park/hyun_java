@@ -15,20 +15,20 @@ public class B8958 {
         }
 
         for (int i = 0; i < a; i++) {
-            int cnt = 0, result = 0, score = 0;
+            int cnt = 0, result = 0, fever = 0;
             for (int j = 0; j < arr[i].length(); j++) {
                 if (arr[i].charAt(j) == 'O') { //O일때
                     cnt++;
-                    score = score + cnt;
-                    //System.out.println("O임 " + "cnt:" + cnt + " score:" + score + " " + result);
+                    fever = fever + cnt;
+                    //System.out.println("O임 " + "cnt:" + cnt + " fever:" + fever + " " + result);
                 } else {
-                    result += score;             //X일때
+                    result += fever;             //X일때
                     cnt = 0;
-                    score =0;
-                   // System.out.println("X임 " + "cnt:" + cnt + "score:" + score + " " + result);
+                    fever =0;
+                   // System.out.println("X임 " + "cnt:" + cnt + "fever:" + fever + " " + result);
                 }
             }
-            result += score;
+            result += fever;
             System.out.println(result);
         }
 
