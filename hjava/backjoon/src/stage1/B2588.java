@@ -11,7 +11,7 @@ public class B2588 {
 
         in.close();
 
-        System.out.println(A * (B.charAt(2)));
+        System.out.println(A * (B.charAt(2)- '0'));
         System.out.println(A * (B.charAt(1) - '0'));
         System.out.println(A * (B.charAt(0) - '0'));
         System.out.println(A * Integer.parseInt(B));
