@@ -9,7 +9,7 @@ public class B10996 {
 
         for (int i = 1; i <= 2 * n; i++) {
                 //짝수 행
-            if (i % 2 == 0) {
+            if (i % 2 == 1) {
                 for (int j = 1; j <= n; j++) {
                     //홀수 번째
                     if (j % 2 == 1) {
