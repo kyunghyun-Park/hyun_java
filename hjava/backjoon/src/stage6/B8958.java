@@ -9,7 +9,6 @@ public class B8958 {
         sc.nextLine();
         String[] arr = new String[a];
 
-
         for (int i = 0; i < a; i++) {
             arr[i] = sc.nextLine();
         }
