@@ -14,7 +14,7 @@ public class B1157 {
             asc[ch - 'A']++;
         }
 
-        int maxIndex = 0;
+        int maxIndex;
         int max = 0;
         char result = '?';
 
