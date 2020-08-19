@@ -7,13 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	First Page
-	</br>
-
-	<%
-			response.sendRedirect("secondPage.jsp");
-		%>
-
+	<p>Second Page!!</p>
 </body>
 </html>
