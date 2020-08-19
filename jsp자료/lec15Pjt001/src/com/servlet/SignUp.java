@@ -1,6 +1,7 @@
 package com.servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,17 +9,21 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/tsc")
-public class TestServletClass extends HttpServlet {
+@WebServlet("/mSignUp")
+public class SignUp extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-    public TestServletClass() {
-    }
-
-
+       
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		request.setCharacterEncoding("UTF-8");
 		
+		response.setContentType("text/html; charset=UTF-8");
+		
+		PrintWriter out = response.getWriter();
+		String mName = request.getParameter("m_name");
+		String mNickname = request.getParameter("m_nickname");
+		
+		out.print("<p> mName : " + mName + "</p>");
+		out.print("<p> mNickname : " + mNickname + "</p>");
 		
 	}
 
