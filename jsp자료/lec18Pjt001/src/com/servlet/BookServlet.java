@@ -23,7 +23,7 @@ public class BookServlet extends HttpServlet {
 		
 		String driver = "oracle.jdbc.driver.OracleDriver";
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String id = "scott";
+		String id = "c##scott";
 		String pw = "tiger";
 		
 		Connection con = null;
