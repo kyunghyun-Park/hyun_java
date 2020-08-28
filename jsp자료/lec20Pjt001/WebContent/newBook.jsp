@@ -13,6 +13,5 @@
 			book location : <input type="text" name="book_loc"></br>
 			<input type="submit" value="book register">
 		</form>
-		
     </body>
 </html>
