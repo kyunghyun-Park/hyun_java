@@ -8,7 +8,7 @@
     </head>
     <body>
     
-		Second Page
+		두번째 페이지
 
     </body>
 </html>

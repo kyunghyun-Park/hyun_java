@@ -7,7 +7,9 @@
         <title>Insert title here</title>
     </head>
     <body>
-		<%!
+    	<!--  
+    	-->
+		<%! 
 			String m_name;
 			String m_pass;
 			String m_gender;
