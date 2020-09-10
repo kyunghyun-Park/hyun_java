@@ -6,8 +6,7 @@
         <meta charset="EUC-KR">
         <title>Insert title here</title>
     </head>
-    <body>
-		
+    <body>	
 		<%
 			Cookie[] cookies = request.getCookies();
 			System.out.println("cookies : " + cookies);
@@ -22,12 +21,9 @@
 		%>
 		
 		<form action="loginCon" method="post">
-		
 			ID : <input type="text" name="mID"></br>
 			PW : <input type="password" name="mPW"></br>
 			<input type="submit" value="login">
-		
 		</form>
-		 
     </body>
 </html>

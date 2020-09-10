@@ -7,8 +7,6 @@
         <title>Insert title here</title>
     </head>
     <body>
-    
 		두번째 페이지
-
     </body>
 </html>
