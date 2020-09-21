@@ -12,10 +12,7 @@ import javax.servlet.http.HttpSession;
 
 @WebServlet("/loginCon")
 public class LoginCon extends HttpServlet {
-
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		PrintWriter out = response.getWriter();
 		
 		String mId = request.getParameter("mID");
@@ -24,15 +21,13 @@ public class LoginCon extends HttpServlet {
 		out.print("mId : " + mId);
 		out.print("mPw : " + mPw);
 		
+		//세션객체에 담기
 		HttpSession session = request.getSession();
 		session.setAttribute("memberId", mId);
 		
 		response.sendRedirect("loginOk.jsp");
-		
 	}
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
-
 }

@@ -11,15 +11,14 @@ import javax.servlet.http.HttpSession;
 
 @WebServlet("/logoutCon")
 public class LogoutCon extends HttpServlet {
-
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		//세션 담아와서
 		HttpSession session = request.getSession();
+		//세션 날리기
 		session.invalidate();
-		
+		//login페이지로 이동시키기
 		response.sendRedirect("login.jsp");
-		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
