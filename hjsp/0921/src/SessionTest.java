@@ -23,7 +23,7 @@ public class SessionTest extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		session.setAttribute("name", "하이");
+		session.setAttribute("name", "하이");	
 		response.setContentType("text/html;charset=UTF-8");
 		PrintWriter out=response.getWriter();
 		out.println("<h1>이름저장</h1>");
