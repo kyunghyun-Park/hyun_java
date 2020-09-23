@@ -13,30 +13,22 @@ public class ArticleListAction implements Action {
 @Override
 public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {
 	ArrayList<ArticleVo> articleList = new ArrayList();
-	ArticleVo articleVo = new ArticleVo();
-	articleVo.setArticleNum(1);
-	articleVo.setArticleTitle("테스트중입니다");
-	articleVo.setArticleContent("하하");
-	articleVo.setHit(0);
-	articleVo.setWriteDate("2020-09-22 13:10");
-	articleVo.setUpdateDate("2020-09-22 13:13");
-	articleVo.setDeleteDate("2020-09-22 13:16");
-
-	articleList.add(articleVo);
 	
-	ArticleVo articleVo1 = new ArticleVo();
-	articleVo.setArticleNum(2);
-	articleVo1.setArticleTitle("테스트중입니다2");
-	articleVo1.setArticleContent("하하2");
-	articleVo1.setHit(10);
-	articleVo1.setWriteDate("2020-09-22 13:10");
-	articleVo1.setUpdateDate("2020-09-22 13:13");
-	articleVo1.setDeleteDate("2020-09-22 13:16");
 	
-	articleList.add(articleVo1);
-	
+	for(int i=1;i<10;i++) {
+		ArticleVo articleVo = new ArticleVo();
+		articleVo.setArticleNum(i);
+		articleVo.setArticleTitle("테스트 제목"+i);
+		articleVo.setArticleContent("테스트 내용"+i);
+		articleVo.setHit(1+i);
+		articleVo.setWriteDate("2020-09-1"+i+" 13:10");
+		articleVo.setWriteDate("2020-09-1"+i+" 13:13");
+		articleVo.setWriteDate("2020-09-1"+i+" 13:16");
+		articleList.add(articleVo);
+		
+	}	
 	ActionForward forward = new ActionForward();
-	request.setAttribute("list", articleList);
+	request.setAttribute("list2", articleList);
 	forward.setPath("/views/list.jsp");
 	return forward;
 }
