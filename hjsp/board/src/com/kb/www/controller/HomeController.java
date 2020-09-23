@@ -13,22 +13,14 @@ import com.kb.www.action.ArticleListAction;
 import com.kb.www.common.Action;
 import com.kb.www.common.ActionForward;
 
-@WebServlet("/")
+@WebServlet("/list")
 public class HomeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	public HomeController() {
 		super();
 	}
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doProcess(request, response);
-	}
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doProcess(request, response);
-	}
-
+	
 	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		request.setCharacterEncoding("UTF-8");
@@ -36,9 +28,9 @@ public class HomeController extends HttpServlet {
 		Action action = new ArticleListAction();
 		// 이벤트 처리 컨트롤러
 		try {
-//			forward = new ActionForward();
-			forward=action.execute(request, response);
-//			forward.setPath("/views/list.jsp");
+			//forward = new ActionForward();
+			//action으로 떠넘긴다
+			forward=action.execute(request, response); 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -51,5 +43,15 @@ public class HomeController extends HttpServlet {
 			}
 		}
 	}
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doProcess(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doProcess(request, response);
+	}
+
+
 
 }
