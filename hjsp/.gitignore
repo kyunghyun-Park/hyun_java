@@ -12,7 +12,8 @@ tmp/
 *.swp
 
 *~.nib
-
+*.xml
+*.iml
 local.properties
 
 .settings/
@@ -69,3 +70,7 @@ pom.xml.versionsBackup
 pom.xml.next
 release.properties
 dependency-reduced-pom.xml
+
+Servers/Tomcat v8.5 Server at localhost-config/catalina.properties
+Servers/Tomcat v8.5 Server at localhost-config/catalina.policy
+hjsp/Servers/.settings/org.eclipse.wst.server.core.prefs
