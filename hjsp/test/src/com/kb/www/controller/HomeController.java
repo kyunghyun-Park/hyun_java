@@ -15,7 +15,6 @@ import com.kb.www.common.ActionForward;
 
 @WebServlet("/")
 public class HomeController extends HttpServlet {
-
 	private static final long serialVersionUID = 1L;
 
 	public HomeController() {
