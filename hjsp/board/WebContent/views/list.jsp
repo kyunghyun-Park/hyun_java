@@ -9,9 +9,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+
+	function showDetail(num) {
+		location.href="detail?num=" + num;
+	};
+	
+</script>
 </head>
 <body>
-<table style="border: 1px solid black; text-align:center">
+<table style="border: 1px solid black; text-align:center; margin: auto">
 	<tr>
 		<td>번호</td>
 		<td>제목</td>
@@ -19,11 +26,12 @@
 		<td>작성일</td>
 	</tr>
 	<!-- 데이터 있을때만 보이게 -->
-	<% if(list.size() > 0) { %>
-	<% for (int i=0;i<list.size();i++) { %>
+		<% if(list.size() > 0) { %>
+		<% for (int i=0;i<list.size();i++) { %>
 	<tr>
 		<td><%=list.get(i).getArticleNum() %></td>
-		<td><%=list.get(i).getArticleTitle() %></td>
+		<!-- 글 번호 넘겨줌 -->
+		<td onclick="showDetail(<%=list.get(i).getArticleNum() %>)"><%=list.get(i).getArticleTitle() %></td>
 		<td><%=list.get(i).getHit() %></td>
 		<td><%=list.get(i).getWriteDate() %></td>
 	</tr>
